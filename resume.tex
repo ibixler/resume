@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Sourabh Bajaj 
+% Author : Sourabh Bajaj
 % Adapted By : Ivy Bixler
 % A License : MIT
 %------------------------
@@ -50,6 +50,10 @@
   }
 }
 
+\newcommand{\resumeBullet}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -74,90 +78,89 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://www.linkedin.com/in/rujhanarora/}{\Large Rujhan Arora}} & Email : \href{mailto:rujhanarora.96@gmail.com}{rujhanarora.96@gmail.com}\\
-  \href{https://www.linkedin.com/in/rujhanarora/}{{https://www.linkedin.com/in/rujhanarora/}} & Mobile : 8571086069 \\
-\end{tabular*}
 
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Ivy Bixler} & Email: \href{mailto:ivybixler@gmail.com}{ivybixler@gmail.com} \\
+  Worcester, MA & Mobile: (919) 771-9270 \\
+\end{tabular*}
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Worcester Polytechnic Institute (WPI), Worcester, Mass.}{Kurukshetra, Haryana}
-      {B.Tech in Computer Science;  CGPA: 8.4}{July. 2013 -- May. 2017}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Worcester Polytechnic Institute (WPI)}{Worcester, MA}
+    {B.S. in Computer Science}{Aug 2021 -- May 2025}
+    \resumeItemListStart
+      \resumeBullet{Completed Interactive Qualifying Project in Glacier National Park (Aug--Oct 2023).}
+      \resumeBullet{Coursework: Algorithms, Operating Systems, Database Systems, Computer Networks, Artificial Intelligence, Data Mining, Programming Languages.}
+      \resumeBullet{Assisted faculty by writing a setup guide for emulating the x86-64 architecture.}
+      \resumeBullet{Proposed a capstone project creating interactive music-based collages from user listening data.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-
-%-----------EXPERIENCE-----------------
-\section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Fastfox.com}{Gurgaon, Haryana}
-      {Software Development Engineer}{Oct 2018 - Present}
-      \resumeItemListStart
-      \resumeItem{Fastfox Agents}
-            {Implemented a new flexible Incentive System in backend for Fastfox Agents' incentives (Monthly, Quarterly etc), alongwith various other Rubackend API's for the app. Fastfox Agents is an android and ios app for fastfox brokers.}
-        \resumeItem{BroEx}
-          {Revamped BroEx feed for the users. Also, implemented various backend API's for the app. BroEx is the largest network of Real Estate Brokers in India having features like News Feed, Auto Match Notification, Property view and search etc.}
-        \resumeItem{Internal Admin Panel}
-          {Implemented various API's for internal panel for Fastfox employees of various roles. Admin panel is a web panel for internal employees for all their designated tasks.}
-        \resumeItem{Fastfox}
-          {Fastfox is an online platform to get properties on rental basis.}
-        \resumeItem{Tech Stack:}
-          {Node.js, PostgreSQL, Redis, RabbitMQ}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Fidelity Investments}{Chennai, Tamil Nadu}
-      {Software Engineer}{Aug 2017 - Sep 2018}
-      \resumeItemListStart
-        \resumeItem{Reference Point- FI and WI Discretionary}
-          {Worked as a part of Reference Point- FI and WI Discretionary, which is a cloud hosted application(MS sharepoint) storing different plan details in the form of topics, maps and content requests at different levels.}
-        \resumeItem{Scrum Bot (BU Project)}
-          {Developed Scrum Bot for Agile Teams, which takes input from user through Skype and performs various functions in JIRA board. Rather than going to JIRA website, users can directly type in queries in Skype input itself to get desired results.}
-        \resumeItem{Buy Local Bond CMS System (Training Project)}
-          {Developed end-to-end client management system, a Web application to manage and record all activities and preference details of clients under authorized brokers, using JAVA, Angular 4 and MySQL.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-
+%-----------SKILLS-----------------
+\section{Skills}
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Languages}{: Java, C/C++, Python, SQL, JavaScript}
+  }
+  \item{
+    \textbf{Web \& Databases}{: HTML, CSS, MongoDB, PostgreSQL}
+  }
+  \item{
+    \textbf{Tools \& Platforms}{: Git, Docker, Linux, MacOS, QEMU, GitHub CI}
+  }
+  \item{
+    \textbf{Networking}{: Computer Networks, Packet Analysis, Routing, Firewalls}
+  }
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Classification of Trash Based On Recyclability Status (Jan, 2017 – Apr, 2017)}
-      {Developed a project (achieving 88\% accuracy), whose objective was to take images of a single piece of garbage and classify it into five classes- glass, leather, paper, plastic and metal using Computer Vision(CV) approach and Machine Learning, using Python. Used SIFT for feature extraction, K-means clustering for grouping and SVM for classification)}
-    \resumeSubItem{Student and Teacher Attendance Manager}
-      {Developed an android app for taking attendance of both students (by teachers) and teachers (By Admins). Used JAVA and XML with SQLite as database.}
-  \resumeSubHeadingListEnd
-  
-  %-----------PROJECTS-----------------
-\section{Achievements and Responsibilities}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Global Leaderboard rank – 87 @ {\href{https://www.interviewbit.com}{InterviewBit}} }
-      {Profile -{\href{https://www.interviewbit.com/profile/slrparser}{https://www.interviewbit.com/profile/slrparser}} {\href{https://www.interviewbit.com}{InterviewBit}} is a reputed website to test your Data Structures, Algorithms and Coding Skills. I am currently ranked 87 globally, among a pool of more than 2.5 lakh users}
-    \resumeSubItem {1st position}
-      {In Blindcoding , TechSpardha(College Technical Fest) (10/2014 – 10/2014). Blindcoding is an annual event where programming questions have to be solved, with computer screen getting turned off every 5 minutes.}
-    \resumeSubItem {1st position}
-      {In Humbug , TechSpardha(College Technical Fest) (10/2014 – 10/2014). Humbug is an annual event where programming questions have to be solved in a section and bugs have to found out from a given code, in other section}
-    \resumeSubItem {AIR 5934} {In JEE–Mains (05/2013 – 06/2013)}
-    \resumeSubItem {AIR 9400} {In JEE–Advanced (05/2013 – 06/2013)}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubItem{Tile.Music}
+    {Built a fully Dockerized microservice architecture to collect and analyze user listening data. Reduced Spotify API calls by a factor of 300. Generates interactive collages reflecting users’ listening habits using a scheduled job system.}
 
-%
-%--------PROGRAMMING SKILLS------------
-\section{Skills}
- \resumeSubHeadingListStart
-    \item{
-     \textbf{Proficient}{: Node.js, Javascript, Data Structures and Algorithms, PostgreSQL }
-    }
-    \item{
-     \textbf{Comfortable}{: Redis, C++, JAVA, HTML, jQuery}
-    }
- \resumeSubHeadingListEnd
+  \resumeSubItem{Bus Lateness Estimator}
+    {Implemented a job scheduler to determine arrival times of WRTA buses. Developed an interactive map displaying average lateness per stop.}
 
+  \resumeSubItem{Packet Analysis Program}
+    {Analyzed network packet capture files to generate detailed packet summaries and protocol-level insights.}
 
-%-------------------------------------------
+  \resumeSubItem{Interactive Computer Network Gaming Activity}
+    {Configured custom DHCP and Samba servers on Ubuntu 24.04. Demonstrated how Ethernet networking concepts relate to graph theory through hands-on activities.}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Mosaiq Software}{Worcester, MA}
+    {Software Engineer}{Nov 2025 -- Present}
+    \resumeItemListStart
+      \resumeBullet{Designed and implemented a fully RESTful backend for Timlyr, a modern scheduling application inspired by When2Meet.}
+      \resumeBullet{Developed API endpoints to aggregate and normalize availability data across multiple users.}
+      \resumeBullet{Implemented validation, structured error handling, and consistent resource-based routing to ensure API reliability.}
+      \resumeBullet{Collaborated with frontend developers to define API contracts and support a responsive, modern UI.}
+      \resumeBullet{Contributed minor frontend features and UI refinements to improve usability and overall user experience.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {BDS Connected Solutions}{Framingham, MA}
+    {Break/Fix Technician}{July 2025 -- December 2025}
+    \resumeItemListStart
+      \resumeBullet{Diagnose and resolve hardware and software issues for demo devices including phones, PCs, tablets, and laptops.}
+      \resumeBullet{Apply creative problem-solving to ensure full functionality and adherence to deployment standards.}
+      \resumeBullet{Merchandise products according to planograms and store specifications.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Girls Talk Math at WPI}{Worcester, MA}
+    {Team Leader}{Jul 2023 -- Aug 2023 \quad Jul 2024 -- Aug 2024}
+    \resumeItemListStart
+      \resumeBullet{Taught graph theory concepts through Python to high school students.}
+      \resumeBullet{Ensured a safe, inclusive, and supportive learning environment.}
+      \resumeBullet{Increased camper engagement tenfold by integrating an interactive computer networking activity.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 \end{document}
