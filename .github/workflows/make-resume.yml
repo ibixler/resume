@@ -25,14 +25,16 @@ jobs:
       - name: Compile resume
         run: |
           pdflatex -interaction=nonstopmode resume.tex
-          pdflatex -interaction=nonstopmode resume.tex
+          pdflatex -interaction=nonstopmode coverletter.tex
 
       - name: Create / Update Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: latest
-          name: Latest Resume
-          files: resume.pdf
+          name: Latest Resume and Cover Letter
+          files: |
+                  resume.pdf
+                  coverletter.pdf
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
